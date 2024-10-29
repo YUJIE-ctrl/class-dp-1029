@@ -3,7 +3,4 @@ os: linux
 files:
   - source: dist/shop/
     destination: /var/www/html/
-hooks:
-  AfterInstall:
-    - location: Scripts/RunResourceTests.sh
-      timeout: 180    
+file_exists_behavior: OVERWRITE
