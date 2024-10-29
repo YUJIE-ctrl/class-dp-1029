@@ -1,4 +1,4 @@
-FROM nginx:1.13.3-alpine
-COPY /nginx/default.conf /etc/nginx/conf.d/
+FROM docker.io/library/nginx
+COPY ./nginx.conf /etc/nginx/
 RUN rm -rf /usr/share/nginx/html/*
-COPY dist/shop /usr/share/nginx/html
+COPY ./dist/shop /usr/share/nginx/html/
