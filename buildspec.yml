@@ -15,3 +15,4 @@ artifacts:
   files: 
     - dist/shop/*
     - dist/shop/assets/*
+    - appspec.yml

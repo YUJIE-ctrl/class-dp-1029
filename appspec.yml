@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: dist/shop/
+    destination: /var/www/html/
+hooks:
+  AfterInstall:
+    - location: Scripts/RunResourceTests.sh
+      timeout: 180    
