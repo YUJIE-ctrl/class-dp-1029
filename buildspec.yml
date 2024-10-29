@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+  build:
+    commands:
+      - npm install
+      - npm run build
+  post_build:
+    commands:
+      - ls -l ./dist/shop/
+artifacts:
+  files: 
+    - dist/shop/*
+    - dist/shop/assets/*
