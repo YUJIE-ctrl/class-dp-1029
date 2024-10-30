@@ -12,7 +12,7 @@ phases:
       - npm install
       - npm run build
       - TAG='date "+%Y%m%d%H%M%S'
-      - docker build -t dp-ecr-httpd:$TAG https://github.com/YUJIE-ctrl/class-dp-1029.git
+      - docker build -t dp-ecr-httpd:$TAG https://github.com/YUJIE-ctrl/class-dp-1029/Dockerfile.git
       - echo docker build completed on 'date'
       - docker push dp-ecr-httpd:$TAG https://github.com/YUJIE-ctrl/class-dp-1029.git
       - echo docker push completed on 'date'
