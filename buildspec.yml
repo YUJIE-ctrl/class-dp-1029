@@ -12,7 +12,7 @@ phases:
       - npm install
       - npm run build
       - TAG='date "+%Y%m%d%H%M%S'
-      - docker build -t 888577066084.dkr.ecr.ap-northeast-1.amazonaws.com/dp-ecr-httpd:$TAG ./
+      - docker build -t 888577066084.dkr.ecr.ap-northeast-1.amazonaws.com/dp-ecr-httpd:$TAG .
       - echo docker build completed on 'date'
       - docker push 888577066084.dkr.ecr.ap-northeast-1.amazonaws.com/dp-ecr-httpd:$TAG
       - echo docker push completed on 'date'
