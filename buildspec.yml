@@ -19,7 +19,7 @@ phases:
       - echo docker push completed on 'date'
   post_build:
     commands:
-      - echo Build  completed on 'date'
+      - echo Build completed on 'date'
       - printf '[{"name":"mynginx","imageUri":"%s"}]' 888577066084.dkr.ecr.ap-northeast-1.amazonaws.com/1029:$TAG > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
